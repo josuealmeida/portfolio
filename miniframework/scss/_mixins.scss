@@ -1,0 +1,73 @@
+// Botão
+@mixin btn($background, $cor){
+	display: inline-block;
+	background: $background;
+	padding: 14px 20px;
+	font-size: $text1;
+	font-weight: 600;
+	text-decoration: none;
+	color: $cor !important;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .1s background;
+
+	&:hover{
+		color: $cor;
+		background: lighten($background, 20%);
+	}
+}
+
+
+
+// Margens do eixo y (vertical)
+@mixin marginY($size){
+	margin-top: $size;
+	margin-bottom: $size;
+}
+
+// Margens do eixo x (horizontal)
+@mixin marginX($size){
+	margin-left: $size;
+	margin-right: $size;
+}
+
+
+
+// Paddins do eixo y (vertical)
+@mixin paddingY($size){
+	padding-top: $size;
+	padding-bottom: $size;
+}
+
+// Paddings do eixo x (horizontal)
+@mixin paddingX($size){
+	padding-left: $size;
+	padding-right: $size;
+}
+
+
+
+// Flexbox
+@mixin flex($space, $align){
+	display: flex;
+	justify-content: $space;
+	align-items: $align;
+}
+
+
+
+// Informações, notificação
+@mixin info($cor){
+	background: lighten($cor, 35%);
+	padding: 18px 22px;
+	border-left: 8px solid $cor;
+	font-size: $text1;
+	font-weight: 600;
+	color: darken($cor, 25%);
+	overflow: auto;
+	*{
+		color: darken($cor, 25%);
+		font-weight: 600;
+	}
+}

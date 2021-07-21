@@ -1,0 +1,833 @@
+// MINIFRAMEWORK CSS VERSÃO 1.0
+// Autor: Josué Almeida
+// Desenvolvido a partir de Abril de 2021
+
+// Google fonts:
+// Raleway, Montserrat, Poppins, Lato, Quicksand
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// Sass variaveis e mixins
+@import 'variaveis.scss';
+@import 'mixins.scss';
+
+// Ajustes gerais
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: $dark;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
+// Tamanho padrão do texto, (usar unidade de medida "rem" para definir tamanho dos textos, 1rem = 16px)
+html{
+	scroll-behavior: smooth;
+	font-size: 16px;
+}
+
+// Títulos
+h1, h2, h3, h4, h5, h6{
+	padding: 12px 0;
+}
+
+h5, h6 {font-weight: 500}
+
+p{padding: $size1 0}
+
+strong{font-weight: 700}
+
+
+// Seleção do texto feito pelo usuário
+::selection{
+	background: $yellow;
+	color: $dark;
+}
+
+
+// Esconder barra de rolagem
+.overflow-hidden{
+	overflow: hidden;
+}
+
+
+
+// Cores de background
+.bg-dark{
+	background: $dark !important;
+	&, *{
+		color: $white;
+	} 
+}
+.bg-gray{
+	background: $gray !important;
+	&, *{
+		color: $white;
+	}
+}
+.bg-light{
+	background: $light !important;
+	&, *{
+		color: $dark;
+	}
+}
+.bg-white{
+	background: $white !important;
+	&, *{
+		color: $dark;
+	}
+}
+.bg-blue{
+	background: $blue !important;
+	&, *{
+		color: $white;
+	}
+}
+.bg-green{
+	background: $green !important;
+	&, *{
+		color: $white;
+	}
+}
+.bg-red{
+	background: $red !important;
+	&, *{
+		color: $white;
+	}
+}
+.bg-yellow{
+	background: $yellow !important;
+	&, *{
+		color: $dark;
+	}
+}
+
+
+
+// Cores de texto
+.dark{color: $dark !important}
+.gray{color: $gray !important}
+.light{color: $light !important}
+.white{color: $white !important}
+.blue{color: $blue !important}
+.green{color: $green !important}
+.red{color: $red !important}
+.yellow{color: $yellow !important}
+
+// Tamanhos de texto
+.text-1{font-size: $text1 !important}
+.text-2{font-size: $text2 !important}
+.text-3{font-size: $text3 !important}
+.text-4{font-size: $text4 !important}
+.text-5{font-size: $text5 !important}
+
+// Alinhamento de texto
+.text-left{text-align: left}
+.text-center{text-align: center}
+.text-right{text-align: right}
+.text-justify{text-align: justify}
+
+// Texto maiúsculo
+.uppercase{text-transform: uppercase;}
+
+// Formatação de links
+a{
+	text-decoration: none;
+	color: darken($blue, 20%);
+	&:hover{
+		// color: $blue;
+	}
+}
+
+
+
+// Formataçõa de listas
+li{
+	list-style-position: inside
+}
+.no-list{
+	list-style: none;
+}
+
+
+
+// Botões. Inclui tags "<button>" e "<input>"
+button, input[type="submit"], input[type="button"], input[type="file"]{
+	@include btn($blue, $white);
+}
+
+
+// Classic buttons
+.btn{@include btn($blue, $white)}
+
+.btn-dark{@include btn($dark, $white)}
+
+.btn-light{@include btn($light, $dark)}
+
+.btn-white{@include btn($white, $dark)}
+
+.btn-green{@include btn($green, $white)}
+
+.btn-red{@include btn($red, $light)}
+
+.btn-yellow{@include btn($yellow, $dark)}
+
+// Soft buttons
+.btn-soft{
+	@include btn(lighten($blue, 35%), darken($blue, 15%));
+	&:hover{
+		background: lighten($blue, 40%);
+	}
+}
+
+.btn-soft-green{
+	@include btn(lighten($green, 35%), darken($green, 15%));
+	&:hover{
+		background: lighten($green, 40%);
+	}
+}
+
+.btn-soft-red{
+	@include btn(lighten($red, 35%), darken($red, 15%));
+	&:hover{
+		background: lighten($red, 40%);
+	}
+}
+
+.btn-soft-yellow{
+	@include btn(lighten($yellow, 35%), darken($yellow, 20%));
+	&:hover{
+		background: lighten($yellow, 40%);
+	}
+}
+
+
+
+// Formatação dos icones - Boxicons e FontAwesome
+.bx,
+.fas, .far, .fal, .fad, .fab{
+	font-size: $text3;
+	color: $gray;
+	&:hover{
+		color: darken($gray, 10%);
+	}
+}
+
+
+
+// Bordas
+.border{border: 1px solid $gray}
+.border-top{border-top: 1px solid $gray}
+.border-bottom{border-bottom: 1px solid $gray}
+.border-left{border-left: 1px solid $gray}
+.border-right{border-right: 1px solid $gray}
+
+
+
+// Container
+.container{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+// Flexbox layout
+.flex{display: flex}
+
+.flex-center{@include flex(center, center)}
+
+.flex-between-center{@include flex(space-between, center)}
+.flex-between{@include flex(space-between, flex-start)}
+
+.flex-around{@include flex(space-around, flex-start)}
+.flex-around-center{@include flex(space-around, center)}
+
+.flex-evenly{@include flex(space-evenly, flex-start)}
+.flex-evenly-center{@include flex(space-evenly, center)}
+
+.flex-column{flex-direction: column}
+.flex-wrap{flex-wrap: wrap}
+
+// Display block
+.d-block{display: block}
+
+// Display inline-block
+.d-inline-block{display: inline-block}
+
+// Display inline
+.d-inline{display: inline}
+
+// Display none
+.d-none{display: none}
+
+
+
+// Position Relative
+.relative{position: relative}
+
+// Position Absolute
+.absolute{position: absolute}
+
+// Position fixed
+.fixed{position: fixed}
+
+// Position sticky
+.sticky{position: sticky}
+
+// Posições
+.top{top: 0}
+.bottom{bottom: 0}
+.left{left: 0}
+.right{right: 0}
+
+.left-center{
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+.right-center{
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+
+
+// Links ativos de cabeçalhos ou de menus de navagação
+header{
+	.active{
+		// position: relative;
+		opacity: .7;
+	}
+}
+
+
+
+// Botão de menu (ícone abrir menu)
+.btn-menu{
+	// display: none;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+// Menu lateral, sidebar
+.sidebar{
+	width: $mobile;
+	height: 100vh;
+	background: $white;
+	position: fixed;
+	top: 0;
+	z-index: 50;
+	opacity: .6;
+	overflow: auto;
+	transform: translateX(-100%);
+	transition: transform .3s, opacity .2s, box-shadow .3s;
+
+	&.open{
+		transform: translateX(0);
+		opacity: 1;
+	}
+
+	// Cabeçalho do menu
+	header{	
+		padding: 15px $size2;
+		@include flex(space-between, center);
+
+		span{
+			font: {
+				size: $text2;
+				weight: 500;
+			}
+		}
+
+		.bx{
+			cursor: pointer;
+			color: $dark;
+		}
+	}
+
+	// Itens do menu lateral
+	.item{
+		font-size: $text2;
+		padding: 15px $size2;
+		display: block;
+
+		&.active, &:hover, &:active{
+			background: rgba(225 225 225 / .2);
+		}
+	}
+}
+
+// sidebar overlay
+.sidebar-overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(0 0 0 / 0);
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	transform: translateX(-100%);
+	transition: transform .2s, background .6s;
+
+	&.open{
+		transform: translateX(0);
+		background: rgba(0 0 0 / .7);
+	}
+}
+
+
+
+// modal overlay
+.modal-overlay{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 80;
+
+	&.open{
+		display: block;
+		background: rgba(0 0 0 / .9);
+	}
+
+	.bx-x{
+		display: none;
+		position: fixed;
+		top: $size2;
+		right: $size2;
+		font-size: 35px;
+		color: $white;
+		cursor: pointer;
+	}
+}
+
+
+
+// Modal
+.modal{
+	display: none;
+	width: 60%;
+	max-height: 100vh;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: $white;
+	overflow: auto;
+	z-index: 100;
+
+	&.open{
+		display: block;
+	}
+
+	aside, article, section{
+		padding: $size3;
+
+		h2, h3, h4, h5, h6{
+			font-size: $text3;
+			font-weight: 600;
+		}
+	}
+
+	footer{
+		padding: $size1 $size3;
+		position: sticky;
+		bottom: 0;
+		width: 100%;
+		background: $light;
+		border-top: 1px solid darken($light, 5%);
+		text-align: right;
+	}
+}
+
+
+// Botão scroll to top
+.scroll-top{
+	position: fixed;
+	right: $size1;
+	bottom: $size1;
+	transform: translateY(200%);
+	transition: transform .3s;
+	color: lighten($gray, 10%);
+	font-size: 50px;
+	cursor: pointer;
+	z-index: 20;
+
+	&.scroll-top-visible{
+		transform: translateY(0);
+	}
+
+	&:hover, &:active{
+		color: $gray;
+	}
+}
+
+
+
+// Margens
+.m-auto{margin: auto}
+.m-0{margin: 0}
+.m-1{margin: $size1}
+.m-2{margin: $size2}
+.m-3{margin: $size3}
+
+// Margens do topo
+.mt-auto{margin-top: auto}
+.mt-0{margin-top: 0}
+.mt-1{margin-top: $size1}
+.mt-2{margin-top: $size2}
+.mt-3{margin-top: $size3}
+
+// Margens de baixo
+.mb-auto{margin-bottom: auto}
+.mb-0{margin-bottom: 0}
+.mb-1{margin-bottom: $size1}
+.mb-2{margin-bottom: $size2}
+.mb-3{margin-bottom: $size3}
+
+// Margens esquerdas
+.ml-auto{margin-left: auto}
+.ml-0{margin-left: 0}
+.ml-1{margin-left: $size1}
+.ml-2{margin-left: $size2}
+.ml-3{margin-left: $size3}
+
+// Margens direitas
+.mr-auto{margin-right: auto}
+.mr-0{margin-right: 0}
+.mr-1{margin-right: $size1}
+.mr-2{margin-right: $size2}
+.mr-3{margin-right: $size3}
+
+
+// Margens do eixo y (vertical)
+.my-auto{@include marginY(auto)}
+.my-0{@include marginY(0)}
+.my-1{@include marginY($size1)}
+.my-2{@include marginY($size2)}
+.my-3{@include marginY($size3)}
+
+// Margens do eixo x (horizontal)
+.mx-auto{@include marginX(auto)}
+.mx-0{@include marginX(0)}
+.mx-1{@include marginX($size1)}
+.mx-2{@include marginX($size2)}
+.mx-3{@include marginX($size3)}
+
+
+
+// Paddings
+.p-auto{padding: auto}
+.p-0{padding: 0}
+.p-1{padding: $size1}
+.p-2{padding: $size2}
+.p-3{padding: $size3}
+
+// Paddings do topo
+.pt-auto{padding-top: auto}
+.pt-0{padding-top: 0}
+.pt-1{padding-top: $size1}
+.pt-2{padding-top: $size2}
+.pt-3{padding-top: $size3}
+
+// Paddings de baixo
+.pb-auto{padding-bottom: auto}
+.pb-0{padding-bottom: 0}
+.pb-1{padding-bottom: $size1}
+.pb-2{padding-bottom: $size2}
+.pb-3{padding-bottom: $size3}
+
+// Paddings esquerdos
+.pl-auto{padding-left: auto}
+.pl-0{padding-left: 0}
+.pl-1{padding-left: $size1}
+.pl-2{padding-left: $size2}
+.pl-3{padding-left: $size3}
+
+// Paddings direitos
+.pr-auto{padding-right: auto}
+.pr-0{padding-right: 0}
+.pr-1{padding-right: $size1}
+.pr-2{padding-right: $size2}
+.pr-3{padding-right: $size3}
+
+
+// Paddings do eixo y (vertical)
+.py-auto{@include paddingY(auto)}
+.py-0{@include paddingY(0)}
+.py-1{@include paddingY($size1)}
+.py-2{@include paddingY($size2)}
+.py-3{@include paddingY($size3)}
+
+// Paddings do eixo x (horizontal)
+.px-auto{@include paddingX(auto)}
+.px-0{@include paddingX(0)}
+.px-1{@include paddingX($size1)}
+.px-2{@include paddingX($size2)}
+.px-3{@include paddingX($size3)}
+
+
+
+// Formatação de formulários, caixas de entrada (inputs)
+input[type="text"], input[type="password"], input[type="email"],
+input[type="date"], input[type="number"], textarea{
+	background: $white;
+	backdrop-filter: blur(2px);
+	border: none;
+	border: 1px solid $light;
+	outline: none;
+	padding: 14px 20px;
+	display: block;
+	width: 100%;
+	font-size: 1rem;
+	font-weight: 400;
+	caret-color: lighten($dark, 20%);
+	color: lighten($dark, 20%) !important;
+	resize: none;
+	transition: .2s border;
+
+	&:hover{
+		border-color: #cccccc;
+	}
+
+	&:focus{
+		border-color: $gray;
+	}
+
+	&::placeholder{
+		font-weight: 300;
+	}
+}
+
+.input-transparent{
+	background: rgba(250 250 250 / .8) !important;
+	border: none !important;
+	&:hover, &:focus{
+		background: $light !important;
+	}
+}
+
+.form-group{
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+
+
+
+// Formatção de tabelas
+table{
+	width: 100%;
+	border-collapse: collapse;
+
+	th, td{
+		border: 1px solid darken($light, 10%);
+		padding: $size1;
+	}
+
+	th{
+		background: $blue;
+		color: $white;
+		text-align: left;
+		font-weight: 700;
+	}
+
+	tr:nth-child(even){
+		background-color: $light;
+	}
+}
+
+
+
+// Informações
+.info{@include info($blue)}
+.info-dark{@include info($dark)}
+.info-light{@include info($light)}
+.info-gray{@include info($gray)}
+.info-green{@include info($green)}
+.info-red{@include info($red)}
+.info-yellow{@include info($yellow)}
+
+// Imagens
+img{
+	width: 500px;
+	object-fit: cover;
+}
+
+.full-width{width: 100% !important}
+
+
+
+// Loading
+@keyframes loaderRotate{
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+.loading{
+	width: 100%;
+	height: 100vh;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0 0 0 / .7);
+	position: fixed;
+	z-index: 50;
+
+	.loader{
+		border: 8px solid white;
+		border-right-color: transparent;
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+		animation: loaderRotate .7s linear infinite;
+	}
+
+	p{
+		color: $white;
+		font-size: $text2;
+		text-align: center;
+		margin-top: $size2;
+		visibility: hidden;
+	}
+}
+
+.loading-visible{
+	display: flex;
+}
+
+
+
+// Media queries, configurações do design responsivo
+// Design "DESKTOP FIRST"
+
+// Laptops (lg) ou menos
+@media (max-width: $laptop){
+
+	// Tamanho do texto em dispositivos largos
+	html{font-size: 14.5px}
+
+
+	// Flexbox
+	.lg-flex-column{flex-direction: column}
+
+
+	// Display block
+	.lg-d-block{display: block}
+
+	// Display inline-block
+	.lg-d-inline-block{display: inline-block}
+
+	// Display inline
+	.lg-d-inline{display: inline}
+
+	// Display none
+	.lg-d-none{display: none}
+
+
+	// Mudar a largura de uma imagem para 100%
+	.lg-full-width{width: 100% !important} 
+	
+}
+
+// iPad/Tablet (md) ou menos
+@media (max-width: $tablet){
+
+	// Tamanho do texto em dispositivos médios
+	html{font-size: 13px}
+
+
+	// Container
+	.container{max-width: 580px;}
+
+
+	// Flexbox
+	.md-flex-column{flex-direction: column}
+
+
+	// Display block
+	.md-d-block{display: block}
+
+	// Display inline-block
+	.md-d-inline-block{display: inline-block}
+
+	// Display inline
+	.md-d-inline{display: inline}
+
+	// Display none
+	.md-d-none{display: none}
+
+
+	// Modal
+	.modal-overlay .bx-x{
+		display: none !important;
+	}
+
+	.modal{
+		width: 90%;
+
+		.body{
+			padding: $size3 $size2;
+		}
+	}
+
+
+	// Mudar a largura de uma imagem para 100%
+	.md-full-width{width: 100% !important}
+
+}
+
+// Mobile (sm) ou menos
+@media (max-width: $mobile){
+
+	// Flexbox
+	.sm-flex-column{flex-direction: column}
+
+
+	// Tamanho do título grande
+	.text-5{font-size: $text4 !important}
+
+
+	// Display block
+	.sm-d-block{display: block}
+
+	// Display inline-block
+	.sm-d-inline-block{display: inline-block}
+
+	// Display inline
+	.sm-d-inline{display: inline}
+
+	// Display none
+	.sm-d-none{display: none}
+
+
+	// Largura do menu lateral
+	.sidebar{width: 100%}
+
+
+	// Modal
+	.modal{
+		width: 100%;
+
+		.footer{
+			padding: $size1 $size2;
+			
+			button, input, a{
+				display: block;
+				width: 100%;
+				text-align: center;
+				margin-bottom: 5px;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	} 
+
+
+	// Mudar a largura de uma imagem para 100%
+	.sm-full-width{width: 100% !important}
+}
