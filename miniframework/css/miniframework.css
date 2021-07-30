@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #121214;
+  color: #171c24;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
@@ -31,7 +31,7 @@ strong {
 
 ::selection {
   background: #ffda0a;
-  color: #121214;
+  color: #171c24;
 }
 
 .overflow-hidden {
@@ -39,7 +39,7 @@ strong {
 }
 
 .bg-dark {
-  background: #121214 !important;
+  background: #171c24 !important;
 }
 .bg-dark, .bg-dark * {
   color: #fff;
@@ -56,14 +56,14 @@ strong {
   background: #f5f5f5 !important;
 }
 .bg-light, .bg-light * {
-  color: #121214;
+  color: #171c24;
 }
 
 .bg-white {
   background: #fff !important;
 }
 .bg-white, .bg-white * {
-  color: #121214;
+  color: #171c24;
 }
 
 .bg-blue {
@@ -74,7 +74,7 @@ strong {
 }
 
 .bg-green {
-  background: #40ba25 !important;
+  background: #27c38e !important;
 }
 .bg-green, .bg-green * {
   color: #fff;
@@ -91,11 +91,11 @@ strong {
   background: #ffda0a !important;
 }
 .bg-yellow, .bg-yellow * {
-  color: #121214;
+  color: #171c24;
 }
 
 .dark {
-  color: #121214 !important;
+  color: #171c24 !important;
 }
 
 .gray {
@@ -115,7 +115,7 @@ strong {
 }
 
 .green {
-  color: #40ba25 !important;
+  color: #27c38e !important;
 }
 
 .red {
@@ -187,6 +187,7 @@ button, input[type=submit], input[type=button], input[type=file] {
   text-decoration: none;
   color: #fff !important;
   border: none;
+  border-radius: 100px;
   outline: none;
   cursor: pointer;
   transition: 0.1s background;
@@ -205,6 +206,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
   text-decoration: none;
   color: #fff !important;
   border: none;
+  border-radius: 100px;
   outline: none;
   cursor: pointer;
   transition: 0.1s background;
@@ -216,20 +218,21 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 
 .btn-dark {
   display: inline-block;
-  background: #121214;
+  background: #171c24;
   padding: 14px 20px;
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
   color: #fff !important;
   border: none;
+  border-radius: 100px;
   outline: none;
   cursor: pointer;
   transition: 0.1s background;
 }
 .btn-dark:hover {
   color: #fff;
-  background: #42424a;
+  background: #3f4c62;
 }
 
 .btn-light {
@@ -239,14 +242,15 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
-  color: #121214 !important;
+  color: #171c24 !important;
   border: none;
+  border-radius: 100px;
   outline: none;
   cursor: pointer;
   transition: 0.1s background;
 }
 .btn-light:hover {
-  color: #121214;
+  color: #171c24;
   background: white;
 }
 
@@ -257,33 +261,35 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
-  color: #121214 !important;
+  color: #171c24 !important;
   border: none;
+  border-radius: 100px;
   outline: none;
   cursor: pointer;
   transition: 0.1s background;
 }
 .btn-white:hover {
-  color: #121214;
+  color: #171c24;
   background: white;
 }
 
 .btn-green {
   display: inline-block;
-  background: #40ba25;
+  background: #27c38e;
   padding: 14px 20px;
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
   color: #fff !important;
   border: none;
+  border-radius: 100px;
   outline: none;
   cursor: pointer;
   transition: 0.1s background;
 }
 .btn-green:hover {
   color: #fff;
-  background: #7be065;
+  background: #6ee2bb;
 }
 
 .btn-red {
@@ -295,6 +301,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
   text-decoration: none;
   color: #f5f5f5 !important;
   border: none;
+  border-radius: 100px;
   outline: none;
   cursor: pointer;
   transition: 0.1s background;
@@ -311,14 +318,15 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
-  color: #121214 !important;
+  color: #171c24 !important;
   border: none;
+  border-radius: 100px;
   outline: none;
   cursor: pointer;
   transition: 0.1s background;
 }
 .btn-yellow:hover {
-  color: #121214;
+  color: #171c24;
   background: #ffe970;
 }
 
@@ -331,6 +339,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
   text-decoration: none;
   color: #116ea5 !important;
   border: none;
+  border-radius: 100px;
   outline: none;
   cursor: pointer;
   transition: 0.1s background;
@@ -345,23 +354,24 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 
 .btn-soft-green {
   display: inline-block;
-  background: #b2eda5;
+  background: #aeefd9;
   padding: 14px 20px;
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
-  color: #2a7a18 !important;
+  color: #1a8360 !important;
   border: none;
+  border-radius: 100px;
   outline: none;
   cursor: pointer;
   transition: 0.1s background;
 }
 .btn-soft-green:hover {
-  color: #2a7a18;
-  background: #fafefa;
+  color: #1a8360;
+  background: white;
 }
 .btn-soft-green:hover {
-  background: #c4f1ba;
+  background: #c3f3e3;
 }
 
 .btn-soft-red {
@@ -373,6 +383,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
   text-decoration: none;
   color: #9f1b1b !important;
   border: none;
+  border-radius: 100px;
   outline: none;
   cursor: pointer;
   transition: 0.1s background;
@@ -394,6 +405,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
   text-decoration: none;
   color: #a38a00 !important;
   border: none;
+  border-radius: 100px;
   outline: none;
   cursor: pointer;
   transition: 0.1s background;
@@ -560,6 +572,8 @@ header .active {
 }
 
 .btn-menu {
+  padding: 0;
+  background: transparent !important;
   font-size: 30px;
   cursor: pointer;
 }
@@ -592,7 +606,7 @@ header .active {
 }
 .sidebar header .bx {
   cursor: pointer;
-  color: #121214;
+  color: #171c24;
 }
 .sidebar .item {
   font-size: 1.2rem;
@@ -1003,8 +1017,8 @@ input[type=date], input[type=number], textarea {
   width: 100%;
   font-size: 1rem;
   font-weight: 400;
-  caret-color: #42424a;
-  color: #42424a !important;
+  caret-color: #3f4c62;
+  color: #3f4c62 !important;
   resize: none;
   transition: 0.2s border;
 }
@@ -1067,9 +1081,9 @@ table tr:nth-child(even) {
 }
 
 .info-dark {
-  background: #676772;
+  background: #5d7191;
   padding: 18px 22px;
-  border-left: 8px solid #121214;
+  border-left: 8px solid #171c24;
   font-size: 0.9rem;
   font-weight: 600;
   color: black;
@@ -1109,16 +1123,16 @@ table tr:nth-child(even) {
 }
 
 .info-green {
-  background: #b2eda5;
+  background: #aeefd9;
   padding: 18px 22px;
-  border-left: 8px solid #40ba25;
+  border-left: 8px solid #27c38e;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #1b5010;
+  color: #125941;
   overflow: auto;
 }
 .info-green * {
-  color: #1b5010;
+  color: #125941;
   font-weight: 600;
 }
 
@@ -1151,7 +1165,7 @@ table tr:nth-child(even) {
 }
 
 img {
-  width: 500px;
+  width: 100%;
   object-fit: cover;
 }
 

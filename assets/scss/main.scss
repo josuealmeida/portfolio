@@ -1,2 +1,29 @@
 @import '../../miniframework/scss/variaveis.scss';
 @import '../../miniframework/scss/mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+
+
+*{font-family: 'Ubuntu', sans-serif}
+
+
+
+/* Apresentação
+---------------------------------------------- */
+main{
+	padding: 100px $size2;
+
+	@media (max-width: $tablet){
+		padding: $size3 $size2;
+	}
+
+	.container{
+		article, img{
+			flex-basis: 100%;
+		}
+
+		h1{
+			font-weight: 700;
+		}
+	}
+}

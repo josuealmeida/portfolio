@@ -304,7 +304,8 @@ header{
 
 // Botão de menu (ícone abrir menu)
 .btn-menu{
-	// display: none;
+	padding: 0;
+	background: transparent !important;
 	font-size: 30px;
 	cursor: pointer;
 }
@@ -650,7 +651,7 @@ table{
 
 // Imagens
 img{
-	width: 500px;
+	width: 100%;
 	object-fit: cover;
 }
 
