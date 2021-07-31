@@ -11,20 +11,37 @@ h1, h2, h3, h4 {
 /* Links do header
 ---------------------------------------------- */
 .link {
-  transition: color 0.3s;
+  position: relative;
+  padding-bottom: 0.2rem;
+  transition: color 0.5s;
 }
-.link:hover {
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #1a9ce8;
+  transform: scale(0, 1);
+  transition: transform 0.2s;
+}
+.link:hover, .link:hover::after {
   color: #bce2f8;
-  border-bottom: 2px solid #1a9ce8;
+  transform: scale(1, 1);
 }
 
 /* Apresentação
 ---------------------------------------------- */
 main {
+  background: #272835;
   padding: 80px 25px;
 }
 main article {
   max-width: 700px;
+}
+main article h1, main article p {
+  color: white;
 }
 
 /* Habilidades

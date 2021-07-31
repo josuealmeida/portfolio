@@ -15,11 +15,25 @@ h1, h2, h3, h4{
 /* Links do header
 ---------------------------------------------- */
 .link{
-	transition: color .3s;
+	position: relative;
+	padding-bottom: 0.20rem;
+	transition: color .5s;
 
-	&:hover{
+	&::after{
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 2px;
+		background: $blue;
+		transform: scale(0, 1);
+		transition: transform .2s;
+	}
+
+	&:hover, &:hover::after{
 		color: lighten($blue, 35%);
-		border-bottom: 2px solid $blue;
+		transform: scale(1, 1);
 	}	
 }
 
@@ -28,10 +42,15 @@ h1, h2, h3, h4{
 /* Apresentação
 ---------------------------------------------- */
 main{
+	background: lighten($dark, 5%);
 	padding: 80px $size2;
 
 	article{
 		max-width: 700px;
+
+		h1, p{
+			color: white;
+		}
 	}	
 }
 

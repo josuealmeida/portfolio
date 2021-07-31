@@ -194,7 +194,7 @@ button, input[type=submit], input[type=button], input[type=file] {
 }
 button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=file]:hover {
   color: #fff;
-  background: #77c4f1;
+  background: #158dd3;
 }
 
 .btn {
@@ -213,7 +213,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 }
 .btn:hover {
   color: #fff;
-  background: #77c4f1;
+  background: #158dd3;
 }
 
 .btn-dark {
@@ -232,7 +232,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 }
 .btn-dark:hover {
   color: #fff;
-  background: #474a61;
+  background: #111217;
 }
 
 .btn-light {
@@ -251,7 +251,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 }
 .btn-light:hover {
   color: #1c1d26;
-  background: white;
+  background: #e8e8e8;
 }
 
 .btn-white {
@@ -270,7 +270,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 }
 .btn-white:hover {
   color: #1c1d26;
-  background: white;
+  background: #f2f2f2;
 }
 
 .btn-green {
@@ -289,7 +289,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 }
 .btn-green:hover {
   color: #fff;
-  background: #6ee2bb;
+  background: #23ae7f;
 }
 
 .btn-red {
@@ -308,7 +308,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 }
 .btn-red:hover {
   color: #f5f5f5;
-  background: #ea8282;
+  background: #ca2222;
 }
 
 .btn-yellow {
@@ -327,7 +327,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 }
 .btn-yellow:hover {
   color: #1c1d26;
-  background: #ffe970;
+  background: #f0cb00;
 }
 
 .btn-soft {
@@ -346,7 +346,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 }
 .btn-soft:hover {
   color: #116ea5;
-  background: white;
+  background: #a5d8f6;
 }
 .btn-soft:hover {
   background: #d3ecfb;
@@ -368,7 +368,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 }
 .btn-soft-green:hover {
   color: #1a8360;
-  background: white;
+  background: #99ebcf;
 }
 .btn-soft-green:hover {
   background: #c3f3e3;
@@ -390,7 +390,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 }
 .btn-soft-red:hover {
   color: #9f1b1b;
-  background: white;
+  background: #f1aeae;
 }
 .btn-soft-red:hover {
   background: #f9d9d9;
@@ -412,7 +412,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 }
 .btn-soft-yellow:hover {
   color: #a38a00;
-  background: white;
+  background: #fff1a3;
 }
 .btn-soft-yellow:hover {
   background: #fff9d6;

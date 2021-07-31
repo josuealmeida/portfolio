@@ -15,7 +15,7 @@
 
 	&:hover{
 		color: $cor;
-		background: lighten($background, 20%);
+		background: darken($background, 5%);
 	}
 }
 
