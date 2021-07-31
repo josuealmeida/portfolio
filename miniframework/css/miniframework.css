@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #171c24;
+  color: #1c1d26;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
@@ -31,7 +31,7 @@ strong {
 
 ::selection {
   background: #ffda0a;
-  color: #171c24;
+  color: #1c1d26;
 }
 
 .overflow-hidden {
@@ -39,7 +39,7 @@ strong {
 }
 
 .bg-dark {
-  background: #171c24 !important;
+  background: #1c1d26 !important;
 }
 .bg-dark, .bg-dark * {
   color: #fff;
@@ -56,14 +56,14 @@ strong {
   background: #f5f5f5 !important;
 }
 .bg-light, .bg-light * {
-  color: #171c24;
+  color: #1c1d26;
 }
 
 .bg-white {
   background: #fff !important;
 }
 .bg-white, .bg-white * {
-  color: #171c24;
+  color: #1c1d26;
 }
 
 .bg-blue {
@@ -91,11 +91,11 @@ strong {
   background: #ffda0a !important;
 }
 .bg-yellow, .bg-yellow * {
-  color: #171c24;
+  color: #1c1d26;
 }
 
 .dark {
-  color: #171c24 !important;
+  color: #1c1d26 !important;
 }
 
 .gray {
@@ -218,7 +218,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 
 .btn-dark {
   display: inline-block;
-  background: #171c24;
+  background: #1c1d26;
   padding: 14px 20px;
   font-size: 0.9rem;
   font-weight: 600;
@@ -232,7 +232,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
 }
 .btn-dark:hover {
   color: #fff;
-  background: #3f4c62;
+  background: #474a61;
 }
 
 .btn-light {
@@ -242,7 +242,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
-  color: #171c24 !important;
+  color: #1c1d26 !important;
   border: none;
   border-radius: 100px;
   outline: none;
@@ -250,7 +250,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
   transition: 0.1s background;
 }
 .btn-light:hover {
-  color: #171c24;
+  color: #1c1d26;
   background: white;
 }
 
@@ -261,7 +261,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
-  color: #171c24 !important;
+  color: #1c1d26 !important;
   border: none;
   border-radius: 100px;
   outline: none;
@@ -269,7 +269,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
   transition: 0.1s background;
 }
 .btn-white:hover {
-  color: #171c24;
+  color: #1c1d26;
   background: white;
 }
 
@@ -318,7 +318,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
-  color: #171c24 !important;
+  color: #1c1d26 !important;
   border: none;
   border-radius: 100px;
   outline: none;
@@ -326,7 +326,7 @@ button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=fil
   transition: 0.1s background;
 }
 .btn-yellow:hover {
-  color: #171c24;
+  color: #1c1d26;
   background: #ffe970;
 }
 
@@ -596,6 +596,7 @@ header .active {
 }
 .sidebar header {
   padding: 15px 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -606,7 +607,7 @@ header .active {
 }
 .sidebar header .bx {
   cursor: pointer;
-  color: #171c24;
+  color: #1c1d26;
 }
 .sidebar .item {
   font-size: 1.2rem;
@@ -1017,8 +1018,8 @@ input[type=date], input[type=number], textarea {
   width: 100%;
   font-size: 1rem;
   font-weight: 400;
-  caret-color: #3f4c62;
-  color: #3f4c62 !important;
+  caret-color: #474a61;
+  color: #474a61 !important;
   resize: none;
   transition: 0.2s border;
 }
@@ -1081,9 +1082,9 @@ table tr:nth-child(even) {
 }
 
 .info-dark {
-  background: #5d7191;
+  background: #686b8d;
   padding: 18px 22px;
-  border-left: 8px solid #171c24;
+  border-left: 8px solid #1c1d26;
   font-size: 0.9rem;
   font-weight: 600;
   color: black;

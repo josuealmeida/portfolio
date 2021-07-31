@@ -6,24 +6,51 @@
 
 *{font-family: 'Ubuntu', sans-serif}
 
+h1, h2, h3, h4{
+	font-weight: 700;
+}
+
+
+
+/* Links do header
+---------------------------------------------- */
+.link{
+	transition: color .3s;
+
+	&:hover{
+		color: lighten($blue, 35%);
+		border-bottom: 2px solid $blue;
+	}	
+}
+
 
 
 /* Apresentação
 ---------------------------------------------- */
 main{
-	padding: 100px $size2;
+	padding: 80px $size2;
 
-	@media (max-width: $tablet){
-		padding: $size3 $size2;
-	}
+	article{
+		max-width: 700px;
+	}	
+}
 
-	.container{
-		article, img{
-			flex-basis: 100%;
-		}
 
-		h1{
-			font-weight: 700;
+
+/* Habilidades
+---------------------------------------------- */
+#habilidades{
+	.container div{
+		@include flex(space-between, flex-start);
+		flex-wrap: wrap;
+
+		article{
+			width: 300px;
+
+			@media (max-width: $tablet){
+				width: 100%;
+				margin-bottom: 100px;
+			}
 		}
 	}
 }

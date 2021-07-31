@@ -331,6 +331,7 @@ header{
 	// Cabeçalho do menu
 	header{	
 		padding: 15px $size2;
+		border-bottom: 1px solid rgba(255 255 255 / .2);
 		@include flex(space-between, center);
 
 		span{

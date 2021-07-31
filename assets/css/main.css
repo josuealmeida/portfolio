@@ -4,21 +4,45 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+/* Links do header
+---------------------------------------------- */
+.link {
+  transition: color 0.3s;
+}
+.link:hover {
+  color: #bce2f8;
+  border-bottom: 2px solid #1a9ce8;
+}
+
 /* Apresentação
 ---------------------------------------------- */
 main {
-  padding: 100px 25px;
+  padding: 80px 25px;
+}
+main article {
+  max-width: 700px;
+}
+
+/* Habilidades
+---------------------------------------------- */
+#habilidades .container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+#habilidades .container div article {
+  width: 300px;
 }
 @media (max-width: 768px) {
-  main {
-    padding: 50px 25px;
+  #habilidades .container div article {
+    width: 100%;
+    margin-bottom: 100px;
   }
-}
-main .container article, main .container img {
-  flex-basis: 100%;
-}
-main .container h1 {
-  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */
