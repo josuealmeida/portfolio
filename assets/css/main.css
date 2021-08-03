@@ -39,6 +39,8 @@ main {
 }
 main article {
   max-width: 700px;
+  opacity: 0.2;
+  transition: opacity 1s;
 }
 main article h1, main article p {
   color: white;

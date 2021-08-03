@@ -14,12 +14,14 @@ else {
 		setTimeout(() =>{
 			loading.classList.remove('loading-visible')
 			mensagemProblema.style.visibility = 'hidden'
+
+			document.querySelector('main article').style.opacity = '1'
 		}, 200)
 	}
 
 	setTimeout(() =>{
 		mensagemProblema.style.visibility = 'visible'
-	}, 8000)
+	}, 10000)
 }
 
 
