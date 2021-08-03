@@ -14,7 +14,7 @@ h1, h2, h3, h4{
 
 /* Links do header
 ---------------------------------------------- */
-.link{
+header .link{
 	position: relative;
 	padding-bottom: 0.20rem;
 	transition: color .5s;
@@ -72,4 +72,24 @@ main{
 			}
 		}
 	}
+}
+
+
+
+/* Links do footer
+---------------------------------------------- */
+footer{
+	@media (max-width: $tablet){
+		#footer-nav{
+			margin: $size3 0;
+		}		
+	}
+
+	.link{
+		transition: .2s;
+
+		&:hover{
+			color: $blue !important;
+		}
+	}	
 }

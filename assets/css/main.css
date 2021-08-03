@@ -10,12 +10,12 @@ h1, h2, h3, h4 {
 
 /* Links do header
 ---------------------------------------------- */
-.link {
+header .link {
   position: relative;
   padding-bottom: 0.2rem;
   transition: color 0.5s;
 }
-.link::after {
+header .link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -26,7 +26,7 @@ h1, h2, h3, h4 {
   transform: scale(0, 1);
   transition: transform 0.2s;
 }
-.link:hover, .link:hover::after {
+header .link:hover, header .link:hover::after {
   color: #bce2f8;
   transform: scale(1, 1);
 }
@@ -60,6 +60,20 @@ main article h1, main article p {
     width: 100%;
     margin-bottom: 100px;
   }
+}
+
+/* Links do footer
+---------------------------------------------- */
+@media (max-width: 768px) {
+  footer #footer-nav {
+    margin: 50px 0;
+  }
+}
+footer .link {
+  transition: 0.2s;
+}
+footer .link:hover {
+  color: #1a9ce8 !important;
 }
 
 /*# sourceMappingURL=main.css.map */
