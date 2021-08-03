@@ -452,8 +452,11 @@ header{
 	bottom: $size1;
 	transform: translateY(200%);
 	transition: transform .3s;
-	color: lighten($gray, 10%);
-	font-size: 50px;
+	background: $dark;
+	padding: 5px;
+	border-radius: 50%;
+	border: 2px solid $blue;
+	box-shadow: 0 0 2px $dark;
 	cursor: pointer;
 	z-index: 20;
 
@@ -461,8 +464,8 @@ header{
 		transform: translateY(0);
 	}
 
-	&:hover, &:active{
-		color: $gray;
+	&:hover{
+		background: darken($dark, 2%);
 	}
 }
 
