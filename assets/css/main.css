@@ -46,19 +46,37 @@ main article h1, main article p {
 
 /* Habilidades
 ---------------------------------------------- */
-#habilidades .container div {
+#habilidades article {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  align-items: center;
 }
-#habilidades .container div article {
-  width: 300px;
+#habilidades article:nth-child(2) {
+  margin: 100px 0;
+  flex-direction: row-reverse;
+}
+#habilidades article:nth-child(2) div {
+  margin: 0 50px 0 0;
+}
+#habilidades article img, #habilidades article div {
+  width: 50%;
+}
+#habilidades article div {
+  margin: 0 0 0 50px;
+}
+#habilidades article div h2 {
+  font-size: 1.8rem;
+  color: #1a9ce8;
 }
 @media (max-width: 768px) {
-  #habilidades .container div article {
+  #habilidades article {
+    flex-wrap: wrap-reverse;
+  }
+  #habilidades article img, #habilidades article div {
     width: 100%;
-    margin-bottom: 100px;
+  }
+  #habilidades article div {
+    margin: 0 0 25px 0 !important;
   }
 }
 

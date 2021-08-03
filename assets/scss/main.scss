@@ -59,16 +59,42 @@ main{
 /* Habilidades
 ---------------------------------------------- */
 #habilidades{
-	.container div{
-		@include flex(space-between, flex-start);
-		flex-wrap: wrap;
+	article{
+		@include flex(space-between, center);
 
-		article{
-			width: 300px;
+		// Elemento do meio
+		&:nth-child(2){
+			margin: 100px 0;
+			flex-direction: row-reverse;
 
-			@media (max-width: $tablet){
+			div{
+				margin: 0 $size3 0 0;
+			}
+		}
+		// ---------------
+
+		img, div{
+			width: 50%;
+		}
+
+		div{
+			margin: 0 0 0 $size3;
+
+			h2{
+				font-size: $text3;
+				color: $blue;
+			}
+		}
+
+		@media (max-width: $tablet){
+			flex-wrap: wrap-reverse;
+
+			img, div{
 				width: 100%;
-				margin-bottom: 100px;
+			}
+
+			div{
+				margin: 0 0 $size2 0 !important;
 			}
 		}
 	}
