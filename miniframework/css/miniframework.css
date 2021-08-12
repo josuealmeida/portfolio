@@ -602,9 +602,11 @@ header .active {
   justify-content: space-between;
   align-items: center;
 }
-.sidebar header span {
+.sidebar header h3 {
   font-size: 1.2rem;
   font-weight: 500;
+  margin: 0;
+  padding: 0;
 }
 .sidebar header .bx {
   cursor: pointer;

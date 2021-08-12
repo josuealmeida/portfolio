@@ -44,11 +44,10 @@
 					<div class="md-d-none">
 						<a href="#habilidades" class="link mx-1">Habilidades</a>
 						<a href="#projetos" class="link mx-1">Projetos</a>
-						<a href="#sobre" class="link mx-1">Sobre</a>
 					</div>
 
 					<div class="flex-between-center ml-2">
-						<a href="#encomendar" class="btn sm-d-none">Eu quero um site</a>
+						<a href="#" class="btn sm-d-none">Eu quero um site</a>
 
 						<a href="https://github.com/josuealmeida" target="_blank" class="ml-2">
 							<i class='bx bxl-github white'></i>
@@ -70,14 +69,13 @@
 		
 		<nav class="sidebar bg-dark">
 			<header>
-				<span>Menu</span>
+				<h3>Menu</h3>
 				<i class='bx bx-x white'></i>
 			</header>
 
 			<a href="#habilidades" class="item">Habilidades</a>
 			<a href="#projetos" class="item">Projetos</a>
-			<a href="#sobre" class="item">Sobre</a>
-			<a href="#encomendar" class="item">Encomendar site</a>
+			<a href="#" class="item">Eu quero um site</a>
 		</nav>
 
 
@@ -91,13 +89,26 @@
 					
 					<h2 class="text-2 gray p-0">Desenvolvedor web front-end</h2>
 					
-					<p class="mt-1">Eu posso desenvolver o seu site pessoal, seu portfólio ou um site demonstrativo para seu negócio. Dilvulgue o seu trabalho para todo o mundo através da internet.</p>
+					<p class="mt-1">Eu sou desenvolvedor de sites, meu trabalho é desenvolver o front-end da aplicação ou seja, a parte vísual do site. Conheça mais sobre meu trabalho.</p>
 					
-					<a href="#encomendar" class="btn mt-1">Encomendar</a>
+					<a href="#habilidades" class="btn mt-1">Conhecer mais</a>
 				</article>
 
 			</div>
 		</main>
+
+
+
+		<!-- ---------- Tecnologias e linguagens ---------- -->
+		<section id="tecnologias" class="bg-light">
+			<div class="container flex-center">		
+				<i class='bx bxl-html5'></i>
+				<i class='bx bxl-css3'></i>
+				<i class='bx bxl-javascript'></i>
+				<i class='bx bxl-sass'></i>
+				<i class='bx bxl-git'></i>	
+			</div>
+		</section>
 
 
 
@@ -106,24 +117,29 @@
 			<div class="container">
 
 				<div>
+					<!-- Artigo 1 -->
 					<article>
 						<img src="./assets/img/responsive.svg" alt="Design responsivo - ilustração">
 						
 						<div>
 							<h2>Design responsivo</h2>
-							<p>Construo designs que se adaptam em direferentes tamanhos de dispositivos. Tenha um site acessível em diversos aparelhos.</p>
+							<p>Construo designs que se adaptam em direferentes tamanhos de dispositivos. Independentemente do aparelho que você esteja utilizando seja ele um celular ou um computador, o site será bem exibido.</p>
 						</div>
 					</article>
 
+
+					<!-- Artigo 2 -->
 					<article>
 						<img src="./assets/img/site.svg" alt="website - ilustração">
 
 						<div>
 							<h2>Designs bonitos</h2>
-							<p>Desenvolvo interfaces que combinam com cada tipo de site. Tenha um site com uma aparência que se destaca e chama a atenção de seus clientes.</p>
+							<p>Desenvolvo interfaces que combinam com cada tipo de site, podendo ser um design suave, minimalista, ou até um design mais profissional.</p>
 						</div>
 					</article>
 
+
+					<!-- Artigo 3 -->
 					<article>
 						<img src="./assets/img/thinking.svg" alt="Pessoa pensando - ilustração">
 						
@@ -132,7 +148,22 @@
 							<p>Estou em constante aprendizado para entregar os melhores sites possíveis.</p>
 						</div>
 					</article>
+
 				</div>
+				
+			</div>
+		</section>
+
+
+
+		<!-- ---------- Projetos ---------- -->
+		<section id="projetos" class="bg-green text-center">
+			<div class="container">
+
+				<h2 class="text-4">Conheça meus projetos no GitHub!</h2>
+				<p>Acesse meu perfil no GitHub para poder visualizar meus projetos.</p>
+				
+				<a href="https://github.com/josuealmeida" target="_blank" id="btn-projetos" class="btn">Ver projetos</a>
 				
 			</div>
 		</section>
@@ -143,17 +174,16 @@
 		<footer class="bg-dark p-3">
 			<div class="container flex-between md-flex-column">
 
-				<a href="#inicio" class="white text-2 uppercase">Josué Almeida</a>
+				<a href="./" class="white text-2 uppercase">Josué Almeida</a>
 
 				<nav id="footer-nav">
 					<a href="#inicio" class="link white d-block mb-2">Início</a>
 					<a href="#habilidades" class="link white d-block mb-2">Habilidades</a>
 					<a href="#projetos" class="link white d-block mb-2">Projetos</a>
-					<a href="#sobre" class="link white d-block mb-2">Sobre</a>
 				</nav>
 
 				<nav>
-					<a href="https://github.com/josuealmeida" class="white d-block mb-2">
+					<a href="https://github.com/josuealmeida" target="_blank" class="white d-block mb-2">
 						<i class='bx bxl-github white text-1'></i>
 						<span>/josuealmeida</span>
 					</a>
@@ -170,7 +200,7 @@
 
 
 		<!-- ---------- Scroll to top ---------- -->
-		<button class="scroll-top">
+		<button class="scroll-top" aria-label="voltar para o topo">
 			<i class='bx bx-chevron-up'></i>
 		</button>
 

@@ -43,7 +43,7 @@ header .link{
 ---------------------------------------------- */
 main{
 	background: lighten($dark, 5%);
-	padding: 80px $size2;
+	padding: 100px $size2;
 
 	article{
 		max-width: 700px;
@@ -54,6 +54,19 @@ main{
 			color: white;
 		}
 	}	
+}
+
+
+
+/* Tecnologias e linguagens
+---------------------------------------------- */
+#tecnologias{
+	padding: $size1 $size2;
+
+	i{
+		width: 30px;
+		margin: 0 $size1;
+	}
 }
 
 
@@ -101,6 +114,25 @@ main{
 		}
 	}
 }
+
+
+
+/* Projetos
+---------------------------------------------- */
+#projetos{
+	padding: 65px $size2;
+
+	p{
+		font-weight: 700;
+	}
+
+	#btn-projetos{
+		margin-top: $size1;
+		padding: 20px 30px;
+		font-size: 1rem;
+	}
+}
+
 
 
 
